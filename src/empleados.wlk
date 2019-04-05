@@ -9,14 +9,31 @@ object galvan {
 }
 
 object baigorria {
+	var total= 0
 	var cantidadEmpanadasVendidas = 100
 	var montoPorEmpanada = 15
 	
 	method venderEmpanada() {
 		cantidadEmpanadasVendidas += 1
-	}
- 	
+	
+}
+
 	method sueldo() = cantidadEmpanadasVendidas * montoPorEmpanada
+	
+	
+		
+	method totalCobrado()
+	{
+		total=total+self.sueldo()
+	return	(total)
+	
+		
+	}
+	
+	
+
+ 	
+
 }
 
 object gimenez {
@@ -24,3 +41,7 @@ object gimenez {
 	method dinero() { return dinero }
 	method pagarA( empleado ) { dinero -= empleado.sueldo() }
 }
+
+
+
+
