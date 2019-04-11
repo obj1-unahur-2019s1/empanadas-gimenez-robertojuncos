@@ -50,6 +50,13 @@ object galvan {
 	
 			method pagarDeuda()
 			{
+		
+		//var cuantoDescuento = deuda.min(sueldo)
+		
+		
+		
+		
+		
 				if (dinero >= deuda)
 				{
 					 dinero -= deuda
